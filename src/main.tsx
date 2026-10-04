@@ -114,7 +114,7 @@ createRoot(document.getElementById("root")!).render(
         <VlyToolbar />
       </ToolbarErrorBoundary>
       <ConvexAuthProvider client={convex}>
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <RouteSyncer />
           <Suspense fallback={<RouteLoading />}>
             <Routes>

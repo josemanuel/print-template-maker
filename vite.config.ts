@@ -6,6 +6,7 @@ import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/print-template-maker/",
   plugins: [react(), vlyPlugin(), tailwindcss()],
   resolve: {
     alias: {
